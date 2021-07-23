@@ -1,17 +1,75 @@
 <head>
     <style>
         /* https://html-color.codes */
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: #456BD9;
+            color: #FFF;
+            font-family: sans-serif;
+            line-height: 1.4;
+            margin: 0;
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            letter-spacing: 0.25em;
+            line-height: 1.75;
+            margin: -1em 1em 0;
+            text-transform: uppercase;
+        }
+
+        /* 
+         * Define 3 columns 
+         * https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/
+         */
+        .Prose {
+            padding-bottom: 1em;
+            padding-top: 1em;
+            display: grid;
+            grid-template-columns:
+                [full-start] minmax(1em, 1fr)
+                [main-start] minmax(0, 60em) [main-end]
+                minmax(1em, 1fr) [full-end];
+        }
+
+        /* all child elements of Prose will occupy the main column */
+        .Prose > * {
+            grid-column: main;
+        }
+
+        .Prose > * + * {
+            margin-top: 1em;
+        }
+
     </style>
 </head>
 
 <body>
-    <div>
-        <img src="images/SDE-IMAGES.001.png"/>
-        <img src="images/SDE-IMAGES.002.png"/>
-        <img src="images/SDE-IMAGES.003.png"/>
-        <img src="images/SDE-IMAGES.004.png"/>
-        <img src="images/SDE-IMAGES.005.png"/>
-        <img src="images/SDE-IMAGES.006.png"/>
-        <img src="images/SDE-IMAGES.007.png"/>
+
+    <div class="Prose">
+        <hr/>
+        <p>
+            The grass isn't always greener on the other side...
+            Yeah, but the sky may be bluer
+        </p> 
+        <hr/>
+
+        <p>
+            July 23, 2021
+        </p>
+        <p>
+            <img src="images/SDE-IMAGES.001.png"/>
+        </p>       
     </div>
 </body>
