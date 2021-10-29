@@ -4,22 +4,22 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>DAG</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://d3js.org/d3.v7.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://unpkg.com/d3-dag@0.7.0" data-svelte="svelte-4rhsvx"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" data-svelte="svelte-4rhsvx">
+		<title>Pipeline</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://d3js.org/d3.v7.min.js" data-svelte="svelte-4rhsvx"></script><script src="https://unpkg.com/d3-dag@0.7.0" data-svelte="svelte-4rhsvx"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" data-svelte="svelte-4rhsvx">
 
 		
 
-		<link rel="modulepreload" href="/_app/start-f0d5d058.js">
+		<link rel="modulepreload" href="/_app/start-c9bd1390.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-3c118b73.js">
 		<link rel="modulepreload" href="/_app/pages/__layout.svelte-297936f9.js">
-		<link rel="modulepreload" href="/_app/pages/dag.svelte-740512e1.js">
-		<link rel="modulepreload" href="/_app/chunks/Sidebar-8ad8beef.js">
+		<link rel="modulepreload" href="/_app/pages/pipeline.svelte-01e95459.js">
+		<link rel="modulepreload" href="/_app/chunks/Sidebar-cd3a2008.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-a162a33f.css">
-		<link rel="stylesheet" href="/_app/assets/pages/dag.svelte-1d6b187d.css">
-		<link rel="stylesheet" href="/_app/assets/Sidebar-933d7d1c.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-21b9ee17.css">
+		<link rel="stylesheet" href="/_app/assets/pages/pipeline.svelte-6c391d25.css">
+		<link rel="stylesheet" href="/_app/assets/Sidebar.svelte_svelte&type=style&lang-ef550f66.css">
 
 		<script type="module">
-			import { start } from "/_app/start-f0d5d058.js";
+			import { start } from "/_app/start-c9bd1390.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -33,11 +33,11 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-297936f9.js"),
-						import("/_app/pages/dag.svelte-740512e1.js")
+						import("/_app/pages/pipeline.svelte-01e95459.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/dag",
+						path: "/pipeline",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -62,8 +62,8 @@
 <header class="flex bg-blue-500 p-2 items-center text-gray-600 border-b-2 z-30"><nav class="flex"><button class="z-40 text-blue-200 hover:text-blue-800 cursor-pointer mr-4 border-none focus:outline-none svelte-13e9nct"><svg width="32" height="24" class="svelte-13e9nct"><line id="top" x1="0" y1="2" x2="32" y2="2" class="svelte-13e9nct"></line><line id="middle" x1="0" y1="12" x2="32" y2="12" class="svelte-13e9nct"></line><line id="bottom" x1="0" y1="22" x2="32" y2="22" class="svelte-13e9nct"></line></svg>
 </button>
 		<svg width="auto" height="30"><text x="0" y="20" class="svelte-1aiu60v">Idea to Customer Productivity</text></svg></nav></header>
-
-<div><svg id="dag" class="svelte-531xdg"></svg></div></main>
+<main><div><div id="glossary"></div>
+        <svg id="dag" class="w-1/4 h-1/4"></svg></div></main></main>
 
 
 
